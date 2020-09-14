@@ -1,6 +1,10 @@
 const express = require("express");
-const burger = require("burger");
+const burger = require("../models/burger");
+// module.exports = routes.firstRoute;
 
-// create router
-
-module.exports = router;
+module.exports = (app) => {
+  app.get("/first", function (req, res) {
+    console.log(`route working`);
+    res.render("index", thing);
+  });
+};
