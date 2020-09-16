@@ -1,5 +1,13 @@
 const connection = require("./connection");
 
+class ORM {
+  connection;
+
+  constructor(connection) {
+    this.connection = connection;
+  }
+}
+
 // selectAll();
 
 // insertOne();
