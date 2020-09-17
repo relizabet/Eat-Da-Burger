@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+textarea#burger_input {
+  border-style: dashed;
+  border-width: medium;
+  border-color: #f197cf;
+  background: #f0fffc;
+}
+
+body {
+  background: #fff6d1;
+  font-family: "Press Start 2P", cursive;
+}
+
+ul > li {
+  list-style: none;
+}

@@ -6,8 +6,16 @@ const burger = require("../models/burger");
 const test = [{ thing1: "Hello" }];
 
 module.exports = (app) => {
-  app.get("/first", function (req, res) {
+  app.get("/", function (req, res) {
     console.log(`route working`);
     res.render("index", test[0]);
   });
 };
+
+// router.get
+
+// router.post
+
+// router.put
+
+// router.delete
