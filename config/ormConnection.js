@@ -1,3 +1,4 @@
+// object-relational mapping
 const ORM = require("./ORM");
 const connection = require("./connection");
 
