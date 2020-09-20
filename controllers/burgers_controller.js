@@ -10,6 +10,7 @@ router.get("/", async (req, res) => {
   try {
     const hbsObj = {
       burgers: await burger.selectAllWhere(condiOne),
+      finishedBurgers: await burger.selectAllWhere(condiTwo),
     };
     console.log(hbsObj);
     res.render("index", hbsObj);

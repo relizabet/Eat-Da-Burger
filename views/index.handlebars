@@ -17,7 +17,7 @@
                     <ul>
                         {{#each burgers}}
                         {{#unless devoured}}
-                        {{> burgers/uneaten_partial gone=false}}
+                        {{> burgers/uneaten_partial}}
                         {{/unless}}
                         {{/each}}
                     </ul>
@@ -28,9 +28,9 @@
             <div class="row">
                 <div class="col-8">
                     <ul>
-                        {{#each burgers}}
+                        {{#each finishedBurgers}}
                         {{#if devoured}}
-                        {{> burgers/eaten_partial gone=true}}
+                        {{> burgers/eaten_partial}}
                         {{/if}}
                         {{/each}}
                     </ul>
