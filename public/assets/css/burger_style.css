@@ -1,17 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+h1 {
+  height: 450px;
+}
+
 textarea#burger_input {
-  border-style: dashed;
-  border-width: medium;
-  border-color: #f197cf;
-  background: #f0fffc;
+  border: dashed 5px #ff9eef !important;
+
+  border-radius: 0% !important;
+  max-width: 500px;
+  margin: 20px;
 }
 
 body {
-  background: #fff6d1;
+  background: #faf4da;
   font-family: "Press Start 2P", cursive;
+}
+
+div.col-5 {
+  margin: 4px;
+  background: white;
+  border: dashed 5px #ff9eef !important;
+  min-height: 400px;
+  padding: 20px;
 }
 
 ul > li {
   list-style: none;
+  color: rgb(82, 82, 82);
+  font-size: small;
+  margin-top: 13px;
+  padding-right: 10px;
+}
+
+label {
+  color: rgb(82, 82, 82);
+}
+
+p.col-10 {
+  margin-top: 13px;
+}
+
+button {
+  max-height: 30px;
+  min-width: 80px !important;
+  color: #ff9eef !important;
+  border-style: dashed !important;
+  border-radius: 0% !important;
+  background-color: #cafff4 !important;
+  border-color: #ff9eef !important;
+  border-width: 2px !important;
+  font-size: 8px !important;
+  text-align: center !important;
+}
+
+button:hover {
+  color: white !important;
+  text-shadow: black 1px 1px 1px;
 }
