@@ -14,7 +14,7 @@ $(function () {
   $(".check").on("submit", function (e) {
     e.preventDefault();
     const createBurger = {
-      burger_to_eat: $(".burger_input").val().trim(),
+      burger_name: $(".burger_input").val().trim(),
       devoured: 0,
     };
 
@@ -23,6 +23,7 @@ $(function () {
       data: createBurger,
     }).then(function () {
       console.log("created");
+      location.reload();
     });
   });
 

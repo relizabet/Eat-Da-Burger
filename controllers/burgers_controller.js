@@ -9,8 +9,7 @@ router.get("/", async (req, res) => {
   const condiTwo = "devoured = 1";
   try {
     const hbsObj = {
-      newBurgers: await burger.selectAllWhere(condiOne),
-      devouredBurgers: await burger.selectAllWhere(condiTwo),
+      burgers: await burger.selectAllWhere(condiOne),
     };
     console.log(hbsObj);
     res.render("index", hbsObj);
@@ -24,9 +23,10 @@ router.get("/", async (req, res) => {
 router.post("/api/burgers", async (req, res) => {
   try {
     const result = await burger.insertOne(
-      ["burger_to_eat", "burger_eaten"],
-      [req.body.burger_to_eat, req.body.burger_eaten]
+      ["burger_names", "devoured"],
+      [req.body.burger_name, req.body.devoured]
     );
+    console.log(req.body);
     res.json({ id: result.insertId });
   } catch (err) {
     console.error(err);
