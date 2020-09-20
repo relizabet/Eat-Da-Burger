@@ -36,12 +36,13 @@ router.post("/api/burgers", async (req, res) => {
 
 // router.put
 router.put("/api/burgers/:id", async (req, res) => {
+  console.log(req.params.id);
   const condition = "id = " + req.params.id;
   console.log("condition", condition);
 
   try {
     const result = await burger.updateOne(
-      { devoured: req.body.burger_eaten },
+      { devoured: req.body.devoured },
       condition
     );
 
