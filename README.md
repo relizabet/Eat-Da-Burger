@@ -31,7 +31,7 @@ Each burger in the waiting area also has a `Devour it!` button. When the user cl
 Your app will store every burger in a database, whether devoured or not.
 ```
 
-View the deployed heroku application [here](https://warm-bayou-36809.herokuapp.com/).
+View the deployed heroku application [here](https://sleepy-reaches-07786.herokuapp.com/).
 
 ![Demo](public/assets/img/demo.gif)
 
